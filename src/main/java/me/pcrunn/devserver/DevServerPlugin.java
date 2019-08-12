@@ -17,7 +17,7 @@ public class DevServerPlugin extends JavaPlugin {
         Bukkit.getScheduler().scheduleAsyncRepeatingTask(this, new UpdatePluginsTask(this), 20, 20);
 
         // commands
-        (Objects.requireNonNull(getCommand("toggleHotReloads"))).setExecutor(new ToggleHotReloadsExecutor(this));
+        (Objects.requireNonNull(getCommand("toggleFyreReloads"))).setExecutor(new ToggleHotReloadsExecutor(this));
 
     }
 
