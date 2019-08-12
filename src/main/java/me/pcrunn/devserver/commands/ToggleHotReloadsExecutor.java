@@ -15,9 +15,9 @@ public class ToggleHotReloadsExecutor implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        plugin.getConfig().set("fyre.ccreloads", !plugin.getConfig().getBoolean("fyre.ccreloads"));
+        plugin.getConfig().set("fyreReloads", !plugin.getConfig().getBoolean("fyreReloads"));
         plugin.saveConfig();
-        commandSender.sendMessage("fyrereloads = " + plugin.getConfig().get("fyre.ccreloads: true"));
+        commandSender.sendMessage("fyreReloads = " + plugin.getConfig().get("fyreReloads: true"));
         return false;
     }
 }
