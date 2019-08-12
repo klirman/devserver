@@ -23,7 +23,7 @@ public class UpdatePluginsTask extends BukkitRunnable implements Runnable {
         // don't run if hotReloads are off, there's probably a better way to do that
         // instead of just checking if they're enabled whenever the task runs.
 
-        if(!plugin.getConfig().getBoolean("hotReloads")) return;
+        if(!plugin.getConfig().getBoolean("fyre.ccreloads")) return;
 
         // check if new plugins are added, or updated
         File pluginsDir = new File(StringUtils.removeEnd(Bukkit.getServer().getWorldContainer().getAbsolutePath(), ".") + "plugins");
